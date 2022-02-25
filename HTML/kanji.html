@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/japan-travel-solid-konnichiwa/512/Japanese_fan-512.png">
+  <title>Japanese Flashcards</title>
+  <style> 
+  .home{
+    font-family: 'Dancing Script', cursive;
+    text-decoration-line: none; 
+    color: black;
+    font-size: 40px;
+  }
+  </style>
+  <script>
+    function change() {
+        if(document.getElementById("answer2").style.display == "none")
+          document.getElementById("answer2").style.display = "block";
+        else
+          document.getElementById("answer2").style.display = "none";
+}
+function change1() {
+        if(document.getElementById("answer3").style.display == "none")
+          document.getElementById("answer3").style.display = "block";
+        else
+          document.getElementById("answer3").style.display = "none";
+}
+function change2() {
+        if(document.getElementById("answer4").style.display == "none")
+          document.getElementById("answer4").style.display = "block";
+        else
+          document.getElementById("answer4").style.display = "none";
+}
+function change3() {
+        if(document.getElementById("answer5").style.display == "none")
+          document.getElementById("answer5").style.display = "block";
+        else
+          document.getElementById("answer5").style.display = "none";
+}
+function change4() {
+        if(document.getElementById("answer6").style.display == "none")
+          document.getElementById("answer6").style.display = "block";
+        else
+          document.getElementById("answer6").style.display = "none";
+}
+function change5() {
+        if(document.getElementById("answer7").style.display == "none")
+          document.getElementById("answer7").style.display = "block";
+        else
+          document.getElementById("answer7").style.display = "none";
+}
+  </script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div id="header">
+      <h1><a href="index.html" class="home">Japanese Flashcards</a></h1>
+      <div>
+        <button><a href="hiragana.html">Hiragana</a></button>
+        <button><a href="kk.html">Katakana</a></button>
+        <button style="background: rgb(180, 160, 210);"><a href="kanji.html">Kanji</a></button>
+        <div class="dropdown">
+              <button class="dropbtn">Vocab</button>
+              <div class="dropdown-content">
+                <a href="food.html">Food</a>
+                <a href="animals.html">Animals</a>
+                <a href="places.html">Places</a>
+                <a href="school.html">School</a>
+                <a href="na-adj.html">な-adj.</a>
+                <a href="i-adj.html">い-adj.</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Verbs</button>
+              <div class="dropdown-content">
+                <a href="utype.html">う-type</a>
+                <a href="rutype.html">る-type</a>
+                <a href="irregular.html">Irregular</a>
+                <a href="adverb.html">Adverbs</a>
+              </div>
+            </div>
+        <button><a href="new_cards.html">Freestyle</a></button>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+      <div class="container">
+        <div id="create_card">
+          <h2>Create Flashcard</h2>
+          <label for="question">Question</label>
+          <textarea id="question" maxlength="280"></textarea>
+          <label for="answer" maxlength="280">Answer</label>
+          <br>
+          <textarea id="answer"></textarea>
+          <div>
+            <button id="save_card">Save</button> <button id="close_card_box">Close</button>
+          </div>
+        </div>
+
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="text">Kanji, the hallmark characters of Japanese, ironic because the large majority of them have Chinese roots. Kanji are much more complex than the other two alphabets and contain more than 50,000 characters - but don't worry, it isn't nearly as duanting as it may seem. You only need a couple hundred to know your way around, and there are only a little more than 2,000 most-used kanji. These characters are composed of radicals, groups of strokes similar in structure to the other two languages that give connotations to the kanji. For example, 炭 (すみ), the kanji for charcoal, is made up of three radicals: mountain, fire, and roof. These can, but may not always, give a general idea towards the meaning of a kanji before you look it up, and can also be used as mnemonics. Often Kanji have multiple words tagged as "definitions", because the character will be used in multiple words for slightly different meanings each time. Often, a kanji is more connotation than word. A kanji can be found by itself or in a string of kanji that form a word. When a kanji is by itself, it usually adopts the <em>kunyomi</em> pronounciation, and may be followed by a hiragana character to clarify that, for there is no way other than context and memorization to know how a kanji is pronounced. If a kanji is found in a string of other kanji, it adopts an <em>onyomi</em> pronounciation, usually. This is a shorter collection of hiragana, and makes up part of the word. It may sound complex, but I'm sure you'll get the hang of it! When you click for answers, the first word is the definition, the second line is kunyomi in hiragana, and the third is onyomi in katakana. Good luck!</div>
+        <div id="flashcards">
+        <div class="flashcard" id="thing" onclick="change()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">赤</h2>
+              <h3 id="answer2" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">red<br>あか（い）<br>セキ、シャク</h3></div>
+              <div class="flashcard" id="thing" onclick="change1()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">犬</h2>
+              <h3 id="answer3" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">dog<br>いぬ<br>ケン</h3></div>
+              <div class="flashcard" id="thing" onclick="change2()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">火</h2>
+              <h3 id="answer4" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">fire<br>ひ、び、ほ<br>カ</h3></div>  
+              <div class="flashcard" id="thing" onclick="change3()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">水</h2>
+              <h3 id="answer5" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">water <br>みず<br>スイ</h3></div>      
+              <div class="flashcard" id="thing" onclick="change4()">  
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">鳥</h2>
+              <h3 id="answer6" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">bird<br>とり<br>チョウ</h3></div>
+              <div class="flashcard" id="thing" onclick="change5()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">木</h2>
+              <h3 id="answer7" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">tree<br>き<br>ボク、モクモク</h3></div>
+              </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>

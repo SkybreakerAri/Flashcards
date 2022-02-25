@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="flashcard.png" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="https://cdn1.iconfinder.com/data/icons/japan-travel-solid-konnichiwa/512/Japanese_fan-512.png">
+  <title>Japanese Flashcards</title>
+  <style> 
+  .home{
+    font-family: 'Dancing Script', cursive;
+    text-decoration-line: none; 
+    color: black;
+    font-size: 40px;
+  }
+  </style>
+  <script>
+    function change() {
+        if(document.getElementById("answer2").style.display == "none")
+          document.getElementById("answer2").style.display = "block";
+        else
+          document.getElementById("answer2").style.display = "none";
+}
+function change1() {
+        if(document.getElementById("answer3").style.display == "none")
+          document.getElementById("answer3").style.display = "block";
+        else
+          document.getElementById("answer3").style.display = "none";
+}
+function change2() {
+        if(document.getElementById("answer4").style.display == "none")
+          document.getElementById("answer4").style.display = "block";
+        else
+          document.getElementById("answer4").style.display = "none";
+}
+function change3() {
+        if(document.getElementById("answer5").style.display == "none")
+          document.getElementById("answer5").style.display = "block";
+        else
+          document.getElementById("answer5").style.display = "none";
+}
+function change4() {
+        if(document.getElementById("answer6").style.display == "none")
+          document.getElementById("answer6").style.display = "block";
+        else
+          document.getElementById("answer6").style.display = "none";
+}
+function change5() {
+        if(document.getElementById("answer7").style.display == "none")
+          document.getElementById("answer7").style.display = "block";
+        else
+          document.getElementById("answer7").style.display = "none";
+}
+  </script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div id="header">
+      <h1><a href="index.html" class="home">Japanese Flashcards</a></h1>
+      <div>
+        <button><a href="hiragana.html">Hiragana</a></button>
+        <button><a href="kk.html">Katakana</a></button>
+        <button><a href="kanji.html">Kanji</a></button>
+        <div class="dropdown">
+              <button class="dropbtn" style="background: rgb(180, 160, 210);">Vocab</button>
+              <div class="dropdown-content">
+                <a href="food.html">Food</a>
+                <a href="animals.html">Animals</a>
+                <a href="places.html">Places</a>
+                <a href="school.html">School</a>
+                <a href="na-adj.html" style="background: blueviolet;">な-adj.</a>
+                <a href="i-adj.html">い-adj.</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Verbs</button>
+              <div class="dropdown-content">
+                <a href="utype.html">う-type</a>
+                <a href="rutype.html">る-type</a>
+                <a href="irregular.html">Irregular</a>
+                <a href="adverb.html">Adverbs</a>
+              </div>
+            </div>
+        <button><a href="new_cards.html">Freestyle</a></button>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<section>
+      <div class="container">
+        <div id="create_card">
+          <h2>Create Flashcard</h2>
+          <label for="question">Question</label>
+          <textarea id="question" maxlength="280"></textarea>
+          <label for="answer" maxlength="280">Answer</label>
+          <br>
+          <textarea id="answer"></textarea>
+          <div>
+            <button id="save_card">Save</button> <button id="close_card_box">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div id="flashcards">
+          <div id="text">Adjectives in Japanese come in two forms: i- and na-. We will briefly cover na-adjectives on this page. Na-adjectives are adjectives that end in na when in front of a noun, and are treated as nouns most of the time. For example, in the sentence まちが しずか です (the town is quiet), しずか is a na-adjective meaning "quiet". However, as you might notice, the word does not end in na. That is because na is only used when the adjective is directly in front of and describing a noun, as seen in しずかな  まちです, (the quiet town). They are also conjugated as nouns. Enjoy!</div>
+
+            <div class="flashcard" id="thing" onclick="change()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">しずか（な）</h2>
+              <h3 id="answer2" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">quiet</h3></div>
+              <div class="flashcard" id="thing" onclick="change1()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">きれい（な）</h2>
+              <h3 id="answer3" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">clean, pretty</h3></div>
+              <div class="flashcard" id="thing" onclick="change2()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">べんり（な）</h2>
+              <h3 id="answer4" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">convenient</h3></div>  
+              <div class="flashcard" id="thing" onclick="change3()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">たいせつ（な）</h2>
+              <h3 id="answer5" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">important, precious</h3></div>      
+              <div class="flashcard" id="thing" onclick="change4()">  
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">じょうず（な）</h2>
+              <h3 id="answer6" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">skillful; good at</h3></div>
+              <div class="flashcard" id="thing" onclick="change5()">
+              <h2 style="border-top:1px solid purple; padding: 15px; margin-top:30px" id="question">へた（な）</h2>
+              <h3 id="answer7" style="text-align:center; display:none; color:black; font-size:13pt; font-family:Georgia;">unskilled; bad at</h3></div>
+              </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
